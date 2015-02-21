@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    [Parse enableLocalDatastore];
+    [Parse setApplicationId:@"pYVHYPd6vO4f3cVY7qv5xgu3z1Ov9sKa5CJ0W2QR" clientKey:@"dEYW7a8feCoXE09r6cmjYrKpNBq2YrfXdsY0Drw8"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     return YES;
 }
 
