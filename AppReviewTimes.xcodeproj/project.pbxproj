@@ -20,6 +20,7 @@
 		AF8C6EAB1A9832BD005FAD5E /* TimesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6EAA1A9832BD005FAD5E /* TimesCollectionViewCell.m */; };
 		AF8C6EAE1A9835DA005FAD5E /* LastCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6EAD1A9835DA005FAD5E /* LastCollectionViewCell.m */; };
 		AF8C6EB21A984A9B005FAD5E /* BaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6EB11A984A9B005FAD5E /* BaseTextField.m */; };
+		AF8C6EB41A98C5BB005FAD5E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8C6EB31A98C5BB005FAD5E /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		AF8C6EAD1A9835DA005FAD5E /* LastCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastCollectionViewCell.m; sourceTree = "<group>"; };
 		AF8C6EB01A984A9B005FAD5E /* BaseTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextField.h; sourceTree = "<group>"; };
 		AF8C6EB11A984A9B005FAD5E /* BaseTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextField.m; sourceTree = "<group>"; };
+		AF8C6EB31A98C5BB005FAD5E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		C9E11E3E835750BA4750A52C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8190FD16241880579B14A9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8C6EB41A98C5BB005FAD5E /* libsqlite3.dylib in Frameworks */,
 				1EA59E7FA7F6C057EC195627 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +177,7 @@
 		96D8DB8F3E3842949AF0DC18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF8C6EB31A98C5BB005FAD5E /* libsqlite3.dylib */,
 				C9E11E3E835750BA4750A52C /* libPods.a */,
 			);
 			name = Frameworks;

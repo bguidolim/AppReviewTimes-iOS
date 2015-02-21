@@ -26,15 +26,30 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadData:) name:UIApplicationDidBecomeActiveNotification object:nil];
+}
+
+- (void)reloadData:(BOOL)localStore {
     [SVProgressHUD showWithStatus:@"Loading..." maskType:SVProgressHUDMaskTypeGradient];
+    
     PFQuery *query = [PFQuery queryWithClassName:@"reviewtimes"];
+    if (localStore) {
+        [query fromLocalDatastore];
+    }
+    
     [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
         [SVProgressHUD dismiss];
         
         if (error) {
-            #warning Error
+            if (!localStore) {
+                [self reloadData:YES];
+            } else {
+                [[[UIAlertView alloc] initWithTitle:@"Error" message:@"The operation couldn’t be completed. Check your internet connection." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+            }
+            
         } else {
             self.parseObject = object;
+            [self.parseObject pinInBackground];
             self.subtitle = [NSString stringWithFormat:@"Last update: %@",[self.parseObject.updatedAt timeAgo]];
             
             [self.collectionView reloadData];
