@@ -18,6 +18,8 @@
 		372524951A97629600D92306 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372524941A97629600D92306 /* BaseViewController.m */; };
 		372524991A9762B600D92306 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372524981A9762B600D92306 /* MainViewController.m */; };
 		AF8C6EAB1A9832BD005FAD5E /* TimesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6EAA1A9832BD005FAD5E /* TimesCollectionViewCell.m */; };
+		AF8C6EAE1A9835DA005FAD5E /* LastCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6EAD1A9835DA005FAD5E /* LastCollectionViewCell.m */; };
+		AF8C6EB21A984A9B005FAD5E /* BaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6EB11A984A9B005FAD5E /* BaseTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		A38C4FA0F7783F52C60BBA2F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AF8C6EA91A9832BD005FAD5E /* TimesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimesCollectionViewCell.h; sourceTree = "<group>"; };
 		AF8C6EAA1A9832BD005FAD5E /* TimesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimesCollectionViewCell.m; sourceTree = "<group>"; };
+		AF8C6EAC1A9835DA005FAD5E /* LastCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastCollectionViewCell.h; sourceTree = "<group>"; };
+		AF8C6EAD1A9835DA005FAD5E /* LastCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastCollectionViewCell.m; sourceTree = "<group>"; };
+		AF8C6EB01A984A9B005FAD5E /* BaseTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextField.h; sourceTree = "<group>"; };
+		AF8C6EB11A984A9B005FAD5E /* BaseTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextField.m; sourceTree = "<group>"; };
 		C9E11E3E835750BA4750A52C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8190FD16241880579B14A9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +103,7 @@
 		372524681A975FF200D92306 /* AppReviewTimes */ = {
 			isa = PBXGroup;
 			children = (
+				AF8C6EAF1A984A6C005FAD5E /* Style */,
 				3725246D1A975FF200D92306 /* AppDelegate.h */,
 				3725246E1A975FF200D92306 /* AppDelegate.m */,
 				3725249A1A97666000D92306 /* Model */,
@@ -177,8 +184,19 @@
 			children = (
 				AF8C6EA91A9832BD005FAD5E /* TimesCollectionViewCell.h */,
 				AF8C6EAA1A9832BD005FAD5E /* TimesCollectionViewCell.m */,
+				AF8C6EAC1A9835DA005FAD5E /* LastCollectionViewCell.h */,
+				AF8C6EAD1A9835DA005FAD5E /* LastCollectionViewCell.m */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		AF8C6EAF1A984A6C005FAD5E /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C6EB01A984A9B005FAD5E /* BaseTextField.h */,
+				AF8C6EB11A984A9B005FAD5E /* BaseTextField.m */,
+			);
+			name = Style;
 			sourceTree = "<group>";
 		};
 		D93CDC406702D7522E13D2EA /* Pods */ = {
@@ -331,6 +349,8 @@
 				372524951A97629600D92306 /* BaseViewController.m in Sources */,
 				3725246C1A975FF200D92306 /* main.m in Sources */,
 				372524991A9762B600D92306 /* MainViewController.m in Sources */,
+				AF8C6EAE1A9835DA005FAD5E /* LastCollectionViewCell.m in Sources */,
+				AF8C6EB21A984A9B005FAD5E /* BaseTextField.m in Sources */,
 				372524921A97622F00D92306 /* BaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

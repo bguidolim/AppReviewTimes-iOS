@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ZGNavigationBarTitleViewController.h>
 
-@interface BaseNavigationController : UINavigationController
+@interface BaseNavigationController : ZGNavigationBarTitleViewController
 
 @end
