@@ -8,7 +8,7 @@
 
 #import "AboutViewController.h"
 
-@interface AboutViewController ()
+@interface AboutViewController () <UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
@@ -23,6 +23,15 @@
     NSString *html = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     
     [self.webView loadHTMLString:html baseURL:[[NSBundle mainBundle] bundleURL]];
+}
+
+- (BOOL)webView:(UIWebView *)inWeb shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inType {
+    if ( inType == UIWebViewNavigationTypeLinkClicked ) {
+        [[UIApplication sharedApplication] openURL:[inRequest URL]];
+        return NO;
+    }
+    
+    return YES;
 }
 
 @end
