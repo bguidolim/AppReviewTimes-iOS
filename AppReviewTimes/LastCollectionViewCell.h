@@ -12,6 +12,8 @@
 
 @interface LastCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) UIViewController *parentViewController;
+
 @property (weak, nonatomic) IBOutlet BaseTextField *daysTextField;
 @property (weak, nonatomic) IBOutlet FUISegmentedControl *typeSegementedControl;
 @property (weak, nonatomic) IBOutlet BaseTextField *nameTextField;

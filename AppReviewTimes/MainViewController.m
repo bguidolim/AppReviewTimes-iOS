@@ -33,6 +33,9 @@
     [SVProgressHUD showWithStatus:@"Loading..." maskType:SVProgressHUDMaskTypeGradient];
     
     PFQuery *query = [PFQuery queryWithClassName:@"reviewtimes"];
+    [query orderByDescending:@"createdAt"];
+    [query setLimit:1];
+    
     if (localStore) {
         [query fromLocalDatastore];
     }
@@ -92,7 +95,7 @@
     } else if (indexPath.row == 2) {
         
         LastCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"LastCell" forIndexPath:indexPath];
-        //cell.lastUpdateLabel.text = [NSString stringWithFormat:@"Last update: %@",[self.parseObject.updatedAt timeAgo]];
+        cell.parentViewController = self;
         
         return cell;
     }
@@ -103,7 +106,7 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.row == 2) {
-        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 374);
+        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 309);
     }
     return CGSizeMake([UIScreen mainScreen].bounds.size.width, 132);
 }

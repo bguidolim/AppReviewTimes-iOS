@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import <AFNetworkActivityLogger.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    #ifdef DEBUG
+    [[AFNetworkActivityLogger sharedLogger] startLogging];
+    [[AFNetworkActivityLogger sharedLogger] setLevel:AFLoggerLevelDebug];
+    #endif
     
     [Parse enableLocalDatastore];
     [Parse setApplicationId:@"pYVHYPd6vO4f3cVY7qv5xgu3z1Ov9sKa5CJ0W2QR" clientKey:@"dEYW7a8feCoXE09r6cmjYrKpNBq2YrfXdsY0Drw8"];

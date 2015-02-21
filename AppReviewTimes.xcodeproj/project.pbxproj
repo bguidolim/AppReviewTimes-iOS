@@ -21,6 +21,7 @@
 		AF8C6EAE1A9835DA005FAD5E /* LastCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6EAD1A9835DA005FAD5E /* LastCollectionViewCell.m */; };
 		AF8C6EB21A984A9B005FAD5E /* BaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6EB11A984A9B005FAD5E /* BaseTextField.m */; };
 		AF8C6EB41A98C5BB005FAD5E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8C6EB31A98C5BB005FAD5E /* libsqlite3.dylib */; };
+		AF8C6EB61A98ED6F005FAD5E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8C6EB51A98ED6F005FAD5E /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		AF8C6EB01A984A9B005FAD5E /* BaseTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextField.h; sourceTree = "<group>"; };
 		AF8C6EB11A984A9B005FAD5E /* BaseTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextField.m; sourceTree = "<group>"; };
 		AF8C6EB31A98C5BB005FAD5E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		AF8C6EB51A98ED6F005FAD5E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C9E11E3E835750BA4750A52C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8190FD16241880579B14A9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8C6EB61A98ED6F005FAD5E /* Social.framework in Frameworks */,
 				AF8C6EB41A98C5BB005FAD5E /* libsqlite3.dylib in Frameworks */,
 				1EA59E7FA7F6C057EC195627 /* libPods.a in Frameworks */,
 			);
@@ -106,17 +109,17 @@
 		372524681A975FF200D92306 /* AppReviewTimes */ = {
 			isa = PBXGroup;
 			children = (
-				AF8C6EAF1A984A6C005FAD5E /* Style */,
 				3725246D1A975FF200D92306 /* AppDelegate.h */,
 				3725246E1A975FF200D92306 /* AppDelegate.m */,
-				3725249A1A97666000D92306 /* Model */,
-				3725248F1A9761C300D92306 /* Base */,
-				372524961A97629D00D92306 /* ViewControllers */,
-				AF8C6EA81A98329E005FAD5E /* Cells */,
-				372524731A975FF200D92306 /* Main.storyboard */,
 				372524761A975FF200D92306 /* Images.xcassets */,
+				3725248F1A9761C300D92306 /* Base */,
+				AF8C6EA81A98329E005FAD5E /* Cells */,
 				372524781A975FF200D92306 /* LaunchScreen.xib */,
+				372524731A975FF200D92306 /* Main.storyboard */,
+				3725249A1A97666000D92306 /* Model */,
+				AF8C6EAF1A984A6C005FAD5E /* Style */,
 				372524691A975FF200D92306 /* Supporting Files */,
+				372524961A97629D00D92306 /* ViewControllers */,
 			);
 			path = AppReviewTimes;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 		96D8DB8F3E3842949AF0DC18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF8C6EB51A98ED6F005FAD5E /* Social.framework */,
 				AF8C6EB31A98C5BB005FAD5E /* libsqlite3.dylib */,
 				C9E11E3E835750BA4750A52C /* libPods.a */,
 			);

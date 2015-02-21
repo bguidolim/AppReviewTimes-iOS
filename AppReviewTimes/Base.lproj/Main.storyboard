@@ -79,77 +79,83 @@
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="364"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="309"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contribute your latest review:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6nh-Rl-JuA">
-                                                    <rect key="frame" x="8" y="0.0" width="304" height="32"/>
+                                                    <rect key="frame" x="8" y="8" width="304" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                     <color key="textColor" red="0.1960784314" green="0.28627450980000002" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="N" textAlignment="center" minimumFontSize="17" id="ZHm-up-twU" customClass="BaseTextField">
-                                                    <rect key="frame" x="71" y="42" width="81" height="44"/>
+                                                    <rect key="frame" x="71" y="50" width="81" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="textColor" red="0.19607843137254902" green="0.28627450980392155" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="days" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Agf-cB-FFq">
-                                                    <rect key="frame" x="157" y="42" width="93" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                                    <color key="textColor" red="0.1960784314" green="0.28627450980000002" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="QZa-Y5-qFz" customClass="FUISegmentedControl">
-                                                    <rect key="frame" x="71" y="98" width="179" height="29"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <segments>
-                                                        <segment title="iOS"/>
-                                                        <segment title="Mac"/>
-                                                    </segments>
-                                                </segmentedControl>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your name (optional)" textAlignment="center" minimumFontSize="17" id="HVt-rJ-Dqb" customClass="BaseTextField">
-                                                    <rect key="frame" x="18" y="144" width="284" height="44"/>
+                                                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your name (optional)" textAlignment="center" minimumFontSize="17" id="HVt-rJ-Dqb" customClass="BaseTextField">
+                                                    <rect key="frame" x="18" y="152" width="284" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="textColor" red="0.1960784314" green="0.28627450980000002" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="App name (optional)" textAlignment="center" minimumFontSize="17" id="kBy-6r-Ehh" customClass="BaseTextField">
-                                                    <rect key="frame" x="18" y="196" width="284" height="44"/>
+                                                    <rect key="frame" x="18" y="152" width="284" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="textColor" red="0.1960784314" green="0.28627450980000002" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="iTunes URL (optional)" textAlignment="center" minimumFontSize="17" id="4Nc-Hu-zBi" customClass="BaseTextField">
-                                                    <rect key="frame" x="18" y="248" width="284" height="44"/>
+                                                    <rect key="frame" x="18" y="204" width="284" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="textColor" red="0.1960784314" green="0.28627450980000002" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="URL"/>
                                                 </textField>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4qq-3T-1Ye" customClass="FUIButton">
-                                                    <rect key="frame" x="18" y="312" width="136" height="44"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="days" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Agf-cB-FFq">
+                                                    <rect key="frame" x="157" y="50" width="93" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                    <color key="textColor" red="0.1960784314" green="0.28627450980000002" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="QZa-Y5-qFz" customClass="FUISegmentedControl">
+                                                    <rect key="frame" x="71" y="106" width="179" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <segments>
+                                                        <segment title="iOS"/>
+                                                        <segment title="Mac"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4qq-3T-1Ye" customClass="FUIButton">
+                                                    <rect key="frame" x="93" y="258" width="136" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <state key="normal" title="Submit Directly"/>
+                                                    <connections>
+                                                        <action selector="submitDirectlyButtonPreesed:" destination="OSU-53-B6L" eventType="touchUpInside" id="YCe-nD-Hod"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pMI-eL-aLi" customClass="FUIButton">
-                                                    <rect key="frame" x="166" y="312" width="136" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <rect key="frame" x="92" y="258" width="136" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
                                                     <state key="normal" title="Submit" image="twitter_logo"/>
+                                                    <connections>
+                                                        <action selector="submitTwitterButtonPressed:" destination="OSU-53-B6L" eventType="touchUpInside" id="NXN-3m-4hS"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <size key="customSize" width="320" height="364"/>
+                                        <size key="customSize" width="320" height="309"/>
                                         <connections>
                                             <outlet property="appNameTextField" destination="kBy-6r-Ehh" id="9Ro-si-tgu"/>
                                             <outlet property="appUrlTextField" destination="4Nc-Hu-zBi" id="SAi-k7-RZV"/>
