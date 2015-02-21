@@ -175,7 +175,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="App Review Times" id="G0n-xT-Pag"/>
+                    <navigationItem key="navigationItem" title="App Review Times" id="G0n-xT-Pag">
+                        <barButtonItem key="rightBarButtonItem" image="info" id="0lz-jM-Apn">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="QTe-Xb-gie" kind="push" id="mVc-P8-B2c"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="qJI-Xa-NTO" id="pFE-hG-6EO"/>
                     </connections>
@@ -184,8 +191,39 @@
             </objects>
             <point key="canvasLocation" x="422" y="786"/>
         </scene>
+        <!--About-->
+        <scene sceneID="6CD-2F-oPy">
+            <objects>
+                <viewController id="QTe-Xb-gie" customClass="AboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="krP-of-wE4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="0uZ-cF-cci">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="QTe-Xb-gie" id="AMV-pQ-Gme"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="2zz-fJ-Nq4"/>
+                    <connections>
+                        <outlet property="webView" destination="0uZ-cF-cci" id="SwM-rb-X6t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKf-96-ftu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="786"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="info" width="27" height="28"/>
         <image name="mac-image" width="100" height="100"/>
         <image name="twitter_logo" width="27" height="22"/>
     </resources>
