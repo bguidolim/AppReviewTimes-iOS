@@ -30,7 +30,7 @@
 }
 
 - (void)reloadData:(BOOL)localStore {
-    [SVProgressHUD showWithStatus:@"Loading..." maskType:SVProgressHUDMaskTypeGradient];
+    [SVProgressHUD showWithStatus:@"Loading..." maskType:SVProgressHUDMaskTypeBlack];
     
     PFQuery *query = [PFQuery queryWithClassName:@"reviewtimes"];
     [query orderByDescending:@"createdAt"];
