@@ -1,0 +1,56 @@
+PODS:
+  - AFNetworkActivityLogger (2.0.4):
+    - AFNetworking/NSURLConnection (~> 2.0)
+    - AFNetworking/NSURLSession (~> 2.0)
+  - AFNetworking (2.5.1):
+    - AFNetworking/NSURLConnection (= 2.5.1)
+    - AFNetworking/NSURLSession (= 2.5.1)
+    - AFNetworking/Reachability (= 2.5.1)
+    - AFNetworking/Security (= 2.5.1)
+    - AFNetworking/Serialization (= 2.5.1)
+    - AFNetworking/UIKit (= 2.5.1)
+  - AFNetworking/NSURLConnection (2.5.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.1)
+  - AFNetworking/Security (2.5.1)
+  - AFNetworking/Serialization (2.5.1)
+  - AFNetworking/UIKit (2.5.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Bolts (1.1.3)
+  - FlatUIKit (1.6)
+  - NSDate+TimeAgo (1.0.3)
+  - Parse (1.6.3):
+    - Bolts (~> 1.1)
+  - SVProgressHUD (1.1.2)
+  - TPKeyboardAvoiding (1.2.6)
+  - ZGNavigationBarTitle (0.1.0)
+
+DEPENDENCIES:
+  - AFNetworkActivityLogger (~> 2.0)
+  - AFNetworking (~> 2.5)
+  - FlatUIKit (~> 1.6)
+  - NSDate+TimeAgo (~> 1.0)
+  - Parse (~> 1.6)
+  - SVProgressHUD
+  - TPKeyboardAvoiding (~> 1.2)
+  - ZGNavigationBarTitle
+
+SPEC CHECKSUMS:
+  AFNetworkActivityLogger: cdaa92ea0d544835babe0ba097e7806182d8f837
+  AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
+  Bolts: 3db0a875235e0c9042b013af13af0f00f79b102c
+  FlatUIKit: 48b78e6d026c2f2c8a733425aaa5015c99ffc079
+  NSDate+TimeAgo: f3533e0198fab05b716368b19f8c2185d53d6f3b
+  Parse: f725f76ef200c5127420690fc6882e57c3813923
+  SVProgressHUD: da7a49e789af645d9279ffbca62318945a832438
+  TPKeyboardAvoiding: 0797ad5f2366e2435e605202b01f3b7cff5d82cd
+  ZGNavigationBarTitle: 329caa2c642789add03e71152552dcc0a6b7eecb
+
+COCOAPODS: 0.36.0.beta.2
