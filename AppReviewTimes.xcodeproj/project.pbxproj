@@ -22,6 +22,8 @@
 		AF8C6EB21A984A9B005FAD5E /* BaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6EB11A984A9B005FAD5E /* BaseTextField.m */; };
 		AF8C6EB41A98C5BB005FAD5E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8C6EB31A98C5BB005FAD5E /* libsqlite3.dylib */; };
 		AF8C6EB61A98ED6F005FAD5E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8C6EB51A98ED6F005FAD5E /* Social.framework */; };
+		AF8C6EBB1A993E27005FAD5E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6EBA1A993E27005FAD5E /* AboutViewController.m */; };
+		AF8C6EBF1A993F6E005FAD5E /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = AF8C6EBE1A993F6E005FAD5E /* about.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		AF8C6EB11A984A9B005FAD5E /* BaseTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextField.m; sourceTree = "<group>"; };
 		AF8C6EB31A98C5BB005FAD5E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		AF8C6EB51A98ED6F005FAD5E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		AF8C6EB91A993E27005FAD5E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		AF8C6EBA1A993E27005FAD5E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		AF8C6EBE1A993F6E005FAD5E /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		C9E11E3E835750BA4750A52C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8190FD16241880579B14A9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +132,7 @@
 		372524691A975FF200D92306 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF8C6EBE1A993F6E005FAD5E /* about.html */,
 				3725246A1A975FF200D92306 /* Info.plist */,
 				3725246B1A975FF200D92306 /* main.m */,
 			);
@@ -166,6 +172,8 @@
 			children = (
 				372524971A9762B600D92306 /* MainViewController.h */,
 				372524981A9762B600D92306 /* MainViewController.m */,
+				AF8C6EB91A993E27005FAD5E /* AboutViewController.h */,
+				AF8C6EBA1A993E27005FAD5E /* AboutViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -299,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8C6EBF1A993F6E005FAD5E /* about.html in Resources */,
 				372524751A975FF200D92306 /* Main.storyboard in Resources */,
 				3725247A1A975FF200D92306 /* LaunchScreen.xib in Resources */,
 				372524771A975FF200D92306 /* Images.xcassets in Resources */,
@@ -352,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8C6EBB1A993E27005FAD5E /* AboutViewController.m in Sources */,
 				3725246F1A975FF200D92306 /* AppDelegate.m in Sources */,
 				AF8C6EAB1A9832BD005FAD5E /* TimesCollectionViewCell.m in Sources */,
 				372524951A97629600D92306 /* BaseViewController.m in Sources */,

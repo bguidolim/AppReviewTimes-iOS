@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				font-family: "HelveticaNeue-Light";
+				color: #333;
+				background-color: #F9F9F9;
+			}
+			
+			.question {
+				color: #F9F9F9;
+				background-color: #32496e;
+				padding: 0px 5px;
+				font-weight: bold;
+			}
+			
+			a:link, a:visited {
+				color: #32496e;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="faq row">
+			<div class="column grid-12">
+				<p><span class="question">What is this?</span> This app tracks the average App Store review times for both the iOS and the Mac App Store using data crowdsourced from iOS and Mac developers.</p>
+				<p><span class="question">Who developed this app?</span> Hello! I am Bruno. I have developed this app to help <a href="http://appreviewtimes.com" target="_blank">App Review Times<a> be popular and help more developers with this information. You can find more of my works in <a href="http://guidolim.com" target="_blank">my personal site</a>.</p>
+				<p><span class="question">Who is collecting this data?</span> We are <a href="http://shinydevelopment.com" target="_blank">Shiny Development</a>. We created this site in the hope that it would provide some useful information to developers around the world. We also run <a href="http://iosdevweekly.com/" target="_blank">iOS Dev Weekly</a>, a weekly email with links to the best blog posts and articles from the world of iOS development. If you are interested in the data here then it is likely that you will find something of interest in iOS Dev Weekly each week. <a href="http://iosdevweekly.com/" target="_blank">You should subscribe!</a></p>
+				<p><span class="question">Where does this data come from?</span> This is not official Apple data. It is based only on anecdotal data gathered from people posting their latest review times on Twitter and App.net using the <a href="http://twitter.com/search?q=%23macreviewtime" target="_blank">#macreviewtime</a> or <a href="http://twitter.com/search?q=%23iosreviewtime" target="_blank">#iosreviewtime</a> hash tags. For people that would prefer to remain anonymous when submitting their review we also allow <a href="http://appreviewtimes.com/contribute" target="_blank">direct submissions</a> of review times.</p>
+				<p><span class="question">Can I be notified of the numbers automatically?</span> Yes. The <a href="https://twitter.com/appreviewtimes">@appreviewtimes</a> account on Twitter and the <a href="https://app.net/appreviewtimes">@appreviewtimes</a> account on App.net will each post once a day with the latest averages.</p>
+				<p><span class="question">How do I contribute data?</span> It's simple! Just post to Twitter or App.net with the time it took for your last app review and include one of the hash tags (see above) along with a number of days. Just the hash tag and “X days” is all that is needed at a minimum but including the app name/link is also good. Please don't post the number of hours. See this <a href="https://twitter.com/daveverwer/status/44772212561027072" target="_blank">example tweet</a> for inspiration. If you'd prefer you can <a href="http://appreviewtimes.com/contribute" target="_blank">directly submit</a> your review time. Please do continue to post your times, this site is useless without constant data.</p>
+				<p><span class="question">Should I include the “Waiting for Review” time as well as the “In Review” time?</span> Yes. Include the full time from uploading your app and going into review right through to a “Ready for Sale” status.</p>
+				<p><span class="question">Should I include weekends?</span> Yes. Apple review and approve apps over the weekend. Bless them!</p>
+				<p><span class="question">Should I include expedited reviews?</span> No. Expedited reviews are a special case and this site is trying to capture the average standard review time. The same applies if your app “needs additional time in review”.</p>
+				<p><span class="question">What if my app was rejected a few times?</span> Don't worry! Relax and make yourself a nice cup of tea, it happens to everyone! :) For the purposes of this site that would count as multiple reviews, just tweet or post the last successful review time.</p>
+				<p><span class="question">How accurate is this data?</span> The averages on this site are based only on the data gathered from the community which are a very small subset of the total number of apps which go through review each day. However in our experience it does give a reasonable indication of how review times are changing over time.</p>
+				<p><span class="question">How is the average calculated?</span> The average for each day on the graph is calculated using a <a href="http://en.wikipedia.org/wiki/Truncated_mean" target="_blank">truncated mean average</a> based on historic data (Using 14 days of data for the iOS store, 30 days for Mac). The current number of days average is simply the latest data point from that graph rounded to the nearest whole day.</p>
+  			</div>
+		</div>
+	</body>
+</html>

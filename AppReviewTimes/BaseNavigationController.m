@@ -18,8 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:50.0/255.0 green:73.0/255.0 blue:110.0/255.0 alpha:1.0]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [[UINavigationBar appearance] setTranslucent:NO];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
     
     [[ZGNavigationTitleView appearance] setNavigationBarTitleFontColor:[UIColor whiteColor]];
     [[ZGNavigationTitleView appearance] setNavigationBarSubtitleFontColor:[UIColor whiteColor]];
