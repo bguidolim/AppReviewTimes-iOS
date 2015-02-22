@@ -34,15 +34,14 @@
     [self reloadData:NO];
     
     // SaveData
-    NSUserDefaults *storage = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.mogames.AppReviewTimes"];
-    
+    NSUserDefaults *storage = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.guidolim.AppReviewTimes"];
     self.updateLabel.text = [NSString stringWithFormat:@"Last update: %@",[storage objectForKey:@"updatedOn"]];
     self.iosLabel.text = [NSString stringWithFormat:@"%ld days", (long)[[storage objectForKey:@"iosDays"] integerValue]];
     self.macLabel.text = [NSString stringWithFormat:@"%ld days", (long)[[storage objectForKey:@"macDays"] integerValue]];
 }
 
 - (void)reloadData:(BOOL)localStore {
-    
+
     PFQuery *query = [PFQuery queryWithClassName:@"reviewtimes"];
     [query orderByDescending:@"createdAt"];
     [query setLimit:1];
@@ -65,7 +64,7 @@
             self.macLabel.text = [NSString stringWithFormat:@"%ld days", (long)[[object objectForKey:@"mac_days"] integerValue]];
             
             // SaveData
-            NSUserDefaults *storage = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.mogames.AppReviewTimes"];
+            NSUserDefaults *storage = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.guidolim.AppReviewTimes"];
             [storage setObject:[object objectForKey:@"ios_days"] forKey:@"iosDays"];
             [storage setObject:[object objectForKey:@"mac_days"] forKey:@"macDays"];
             [storage setObject:[object.updatedAt timeAgo] forKey:@"updatedOn"];
@@ -91,11 +90,10 @@
     completionHandler(NCUpdateResultNewData);
 }
 
-- (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)margins
-{
-    margins.bottom = 10.0;
-    return margins;
+- (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)margins {
+    return UIEdgeInsetsZero;
 }
+
 - (IBAction)openApp:(id)sender {
     NSURL *pjURL = [NSURL URLWithString:@"AppReviewTimes://home"];
     [self.extensionContext openURL:pjURL completionHandler:nil];

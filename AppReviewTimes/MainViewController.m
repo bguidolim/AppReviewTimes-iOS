@@ -56,7 +56,7 @@
             self.subtitle = [NSString stringWithFormat:@"Last update: %@",[self.parseObject.updatedAt timeAgo]];
             
             // SaveData
-            NSUserDefaults *storage = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.mogames.AppReviewTimes"];
+            NSUserDefaults *storage = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.guidolim.AppReviewTimes"];
             [storage setObject:[self.parseObject objectForKey:@"ios_days"] forKey:@"iosDays"];
             [storage setObject:[self.parseObject objectForKey:@"mac_days"] forKey:@"macDays"];
             [storage setObject:[self.parseObject.updatedAt timeAgo] forKey:@"updatedOn"];

@@ -53,4 +53,4 @@ SPEC CHECKSUMS:
   TPKeyboardAvoiding: 0797ad5f2366e2435e605202b01f3b7cff5d82cd
   ZGNavigationBarTitle: 329caa2c642789add03e71152552dcc0a6b7eecb
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.0.beta.2

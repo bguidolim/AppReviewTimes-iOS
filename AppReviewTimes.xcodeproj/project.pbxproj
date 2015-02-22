@@ -30,6 +30,7 @@
 		AF8C6EB61A98ED6F005FAD5E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8C6EB51A98ED6F005FAD5E /* Social.framework */; };
 		AF8C6EBB1A993E27005FAD5E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6EBA1A993E27005FAD5E /* AboutViewController.m */; };
 		AF8C6EBF1A993F6E005FAD5E /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = AF8C6EBE1A993F6E005FAD5E /* about.html */; };
+		AF8C6EC11A99AA85005FAD5E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8C6EC01A99AA85005FAD5E /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		AF8C6EB91A993E27005FAD5E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		AF8C6EBA1A993E27005FAD5E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		AF8C6EBE1A993F6E005FAD5E /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		AF8C6EC01A99AA85005FAD5E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C9E11E3E835750BA4750A52C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8190FD16241880579B14A9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8C6EC11A99AA85005FAD5E /* QuartzCore.framework in Frameworks */,
 				AF8C6EB61A98ED6F005FAD5E /* Social.framework in Frameworks */,
 				AF8C6EB41A98C5BB005FAD5E /* libsqlite3.dylib in Frameworks */,
 				1EA59E7FA7F6C057EC195627 /* libPods.a in Frameworks */,
@@ -256,6 +259,7 @@
 		96D8DB8F3E3842949AF0DC18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF8C6EC01A99AA85005FAD5E /* QuartzCore.framework */,
 				3544DB7E1A997104001E3422 /* libPods.a */,
 				AF8C6EB51A98ED6F005FAD5E /* Social.framework */,
 				AF8C6EB31A98C5BB005FAD5E /* libsqlite3.dylib */,
@@ -364,7 +368,7 @@
 				TargetAttributes = {
 					3544DB681A992986001E3422 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 9DB69GE468;
+						DevelopmentTeam = V46ME5Z7UQ;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -373,7 +377,7 @@
 					};
 					372524651A975FF200D92306 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 9DB69GE468;
+						DevelopmentTeam = V46ME5Z7UQ;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -382,6 +386,7 @@
 					};
 					3725247E1A975FF200D92306 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = V46ME5Z7UQ;
 						TestTargetID = 372524651A975FF200D92306;
 					};
 				};
@@ -691,7 +696,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Guilherme Mogames (UD8U6SK568)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -703,7 +709,7 @@
 				INFOPLIST_FILE = AppReviewTimesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "58148557-f5f8-4e8c-ad13-139d910a9ad0";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppReviewTimes.app/AppReviewTimes";
 			};
 			name = Debug;
@@ -712,7 +718,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Guilherme Mogames (UD8U6SK568)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -720,7 +727,7 @@
 				INFOPLIST_FILE = AppReviewTimesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "58148557-f5f8-4e8c-ad13-139d910a9ad0";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppReviewTimes.app/AppReviewTimes";
 			};
 			name = Release;
