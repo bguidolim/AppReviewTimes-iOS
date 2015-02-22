@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1EA59E7FA7F6C057EC195627 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E11E3E835750BA4750A52C /* libPods.a */; };
+		3544DB6B1A992986001E3422 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3544DB6A1A992986001E3422 /* NotificationCenter.framework */; };
+		3544DB711A992986001E3422 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3544DB701A992986001E3422 /* TodayViewController.m */; };
+		3544DB731A992986001E3422 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3544DB721A992986001E3422 /* MainInterface.storyboard */; };
+		3544DB761A992986001E3422 /* App Review Times.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3544DB691A992986001E3422 /* App Review Times.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3544DB7B1A992CCF001E3422 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372524761A975FF200D92306 /* Images.xcassets */; };
+		3544DB7F1A997104001E3422 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3544DB7E1A997104001E3422 /* libPods.a */; };
 		3725246C1A975FF200D92306 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3725246B1A975FF200D92306 /* main.m */; };
 		3725246F1A975FF200D92306 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3725246E1A975FF200D92306 /* AppDelegate.m */; };
 		372524751A975FF200D92306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372524731A975FF200D92306 /* Main.storyboard */; };
@@ -27,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3544DB741A992986001E3422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3725245E1A975FF200D92306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3544DB681A992986001E3422;
+			remoteInfo = "App Review Times";
+		};
 		372524801A975FF200D92306 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3725245E1A975FF200D92306 /* Project object */;
@@ -36,7 +49,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3544DB7A1A992986001E3422 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3544DB761A992986001E3422 /* App Review Times.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3544DB691A992986001E3422 /* App Review Times.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "App Review Times.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3544DB6A1A992986001E3422 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		3544DB6E1A992986001E3422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3544DB6F1A992986001E3422 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		3544DB701A992986001E3422 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		3544DB721A992986001E3422 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		3544DB7C1A993297001E3422 /* AppReviewTimes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AppReviewTimes.entitlements; sourceTree = "<group>"; };
+		3544DB7D1A995981001E3422 /* App Review Times.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "App Review Times.entitlements"; sourceTree = "<group>"; };
+		3544DB7E1A997104001E3422 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		372524661A975FF200D92306 /* AppReviewTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppReviewTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3725246A1A975FF200D92306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3725246B1A975FF200D92306 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +107,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3544DB661A992986001E3422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3544DB7F1A997104001E3422 /* libPods.a in Frameworks */,
+				3544DB6B1A992986001E3422 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		372524631A975FF200D92306 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,11 +136,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3544DB6C1A992986001E3422 /* App Review Times */ = {
+			isa = PBXGroup;
+			children = (
+				3544DB7D1A995981001E3422 /* App Review Times.entitlements */,
+				3544DB6F1A992986001E3422 /* TodayViewController.h */,
+				3544DB701A992986001E3422 /* TodayViewController.m */,
+				3544DB721A992986001E3422 /* MainInterface.storyboard */,
+				3544DB6D1A992986001E3422 /* Supporting Files */,
+			);
+			path = "App Review Times";
+			sourceTree = "<group>";
+		};
+		3544DB6D1A992986001E3422 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3544DB6E1A992986001E3422 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		3725245D1A975FF200D92306 = {
 			isa = PBXGroup;
 			children = (
 				372524681A975FF200D92306 /* AppReviewTimes */,
 				372524821A975FF200D92306 /* AppReviewTimesTests */,
+				3544DB6C1A992986001E3422 /* App Review Times */,
 				372524671A975FF200D92306 /* Products */,
 				D93CDC406702D7522E13D2EA /* Pods */,
 				96D8DB8F3E3842949AF0DC18 /* Frameworks */,
@@ -107,6 +173,7 @@
 			children = (
 				372524661A975FF200D92306 /* AppReviewTimes.app */,
 				3725247F1A975FF200D92306 /* AppReviewTimesTests.xctest */,
+				3544DB691A992986001E3422 /* App Review Times.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +181,7 @@
 		372524681A975FF200D92306 /* AppReviewTimes */ = {
 			isa = PBXGroup;
 			children = (
+				3544DB7C1A993297001E3422 /* AppReviewTimes.entitlements */,
 				3725246D1A975FF200D92306 /* AppDelegate.h */,
 				3725246E1A975FF200D92306 /* AppDelegate.m */,
 				372524761A975FF200D92306 /* Images.xcassets */,
@@ -188,9 +256,11 @@
 		96D8DB8F3E3842949AF0DC18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3544DB7E1A997104001E3422 /* libPods.a */,
 				AF8C6EB51A98ED6F005FAD5E /* Social.framework */,
 				AF8C6EB31A98C5BB005FAD5E /* libsqlite3.dylib */,
 				C9E11E3E835750BA4750A52C /* libPods.a */,
+				3544DB6A1A992986001E3422 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -227,6 +297,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3544DB681A992986001E3422 /* App Review Times */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3544DB791A992986001E3422 /* Build configuration list for PBXNativeTarget "App Review Times" */;
+			buildPhases = (
+				3544DB651A992986001E3422 /* Sources */,
+				3544DB661A992986001E3422 /* Frameworks */,
+				3544DB671A992986001E3422 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "App Review Times";
+			productName = "App Review Times";
+			productReference = 3544DB691A992986001E3422 /* App Review Times.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		372524651A975FF200D92306 /* AppReviewTimes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 372524891A975FF200D92306 /* Build configuration list for PBXNativeTarget "AppReviewTimes" */;
@@ -236,10 +323,12 @@
 				372524631A975FF200D92306 /* Frameworks */,
 				372524641A975FF200D92306 /* Resources */,
 				C8ACE193B06EF2482B372716 /* Copy Pods Resources */,
+				3544DB7A1A992986001E3422 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3544DB751A992986001E3422 /* PBXTargetDependency */,
 			);
 			name = AppReviewTimes;
 			productName = AppReviewTimes;
@@ -273,9 +362,23 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Bruno Guidolim";
 				TargetAttributes = {
+					3544DB681A992986001E3422 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9DB69GE468;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					372524651A975FF200D92306 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = V46ME5Z7UQ;
+						DevelopmentTeam = 9DB69GE468;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					3725247E1A975FF200D92306 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -298,11 +401,21 @@
 			targets = (
 				372524651A975FF200D92306 /* AppReviewTimes */,
 				3725247E1A975FF200D92306 /* AppReviewTimesTests */,
+				3544DB681A992986001E3422 /* App Review Times */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3544DB671A992986001E3422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3544DB731A992986001E3422 /* MainInterface.storyboard in Resources */,
+				3544DB7B1A992CCF001E3422 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		372524641A975FF200D92306 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -357,6 +470,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3544DB651A992986001E3422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3544DB711A992986001E3422 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		372524621A975FF200D92306 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,6 +505,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3544DB751A992986001E3422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3544DB681A992986001E3422 /* App Review Times */;
+			targetProxy = 3544DB741A992986001E3422 /* PBXContainerItemProxy */;
+		};
 		372524811A975FF200D92306 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 372524651A975FF200D92306 /* AppReviewTimes */;
@@ -411,6 +537,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3544DB771A992986001E3422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE8190FD16241880579B14A9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "App Review Times/App Review Times.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "App Review Times/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3544DB781A992986001E3422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A38C4FA0F7783F52C60BBA2F /* Pods.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "App Review Times/App Review Times.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "App Review Times/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		372524871A975FF200D92306 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -492,11 +660,14 @@
 			baseConfigurationReference = FE8190FD16241880579B14A9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppReviewTimes/AppReviewTimes.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AppReviewTimes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -505,11 +676,14 @@
 			baseConfigurationReference = A38C4FA0F7783F52C60BBA2F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppReviewTimes/AppReviewTimes.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AppReviewTimes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -517,6 +691,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Guilherme Mogames (UD8U6SK568)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -528,6 +703,7 @@
 				INFOPLIST_FILE = AppReviewTimesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "58148557-f5f8-4e8c-ad13-139d910a9ad0";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppReviewTimes.app/AppReviewTimes";
 			};
 			name = Debug;
@@ -536,6 +712,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Guilherme Mogames (UD8U6SK568)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -543,6 +720,7 @@
 				INFOPLIST_FILE = AppReviewTimesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "58148557-f5f8-4e8c-ad13-139d910a9ad0";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppReviewTimes.app/AppReviewTimes";
 			};
 			name = Release;
@@ -550,6 +728,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3544DB791A992986001E3422 /* Build configuration list for PBXNativeTarget "App Review Times" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3544DB771A992986001E3422 /* Debug */,
+				3544DB781A992986001E3422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		372524611A975FF200D92306 /* Build configuration list for PBXProject "AppReviewTimes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
