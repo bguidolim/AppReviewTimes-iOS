@@ -8,6 +8,7 @@ An app to check the average review times for iOS and Mac apps.
   
 #Contributors
 [@bguidolim](http://github.com/bguidolim)
+
 [@gmogames](http://github.com/gmogames)
 
 Data provided by [appreviewtimes.com](http://appreviewtimes.com)
