@@ -13,6 +13,7 @@
 		3544DB731A992986001E3422 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3544DB721A992986001E3422 /* MainInterface.storyboard */; };
 		3544DB761A992986001E3422 /* App Review Times.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3544DB691A992986001E3422 /* App Review Times.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3544DB7B1A992CCF001E3422 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372524761A975FF200D92306 /* Images.xcassets */; };
+		3544DB7F1A997104001E3422 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3544DB7E1A997104001E3422 /* libPods.a */; };
 		3725246C1A975FF200D92306 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3725246B1A975FF200D92306 /* main.m */; };
 		3725246F1A975FF200D92306 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3725246E1A975FF200D92306 /* AppDelegate.m */; };
 		372524751A975FF200D92306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372524731A975FF200D92306 /* Main.storyboard */; };
@@ -70,6 +71,8 @@
 		3544DB701A992986001E3422 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		3544DB721A992986001E3422 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		3544DB7C1A993297001E3422 /* AppReviewTimes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AppReviewTimes.entitlements; sourceTree = "<group>"; };
+		3544DB7D1A995981001E3422 /* App Review Times.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "App Review Times.entitlements"; sourceTree = "<group>"; };
+		3544DB7E1A997104001E3422 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		372524661A975FF200D92306 /* AppReviewTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppReviewTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3725246A1A975FF200D92306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3725246B1A975FF200D92306 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -108,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3544DB7F1A997104001E3422 /* libPods.a in Frameworks */,
 				3544DB6B1A992986001E3422 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +139,7 @@
 		3544DB6C1A992986001E3422 /* App Review Times */ = {
 			isa = PBXGroup;
 			children = (
+				3544DB7D1A995981001E3422 /* App Review Times.entitlements */,
 				3544DB6F1A992986001E3422 /* TodayViewController.h */,
 				3544DB701A992986001E3422 /* TodayViewController.m */,
 				3544DB721A992986001E3422 /* MainInterface.storyboard */,
@@ -251,6 +256,7 @@
 		96D8DB8F3E3842949AF0DC18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3544DB7E1A997104001E3422 /* libPods.a */,
 				AF8C6EB51A98ED6F005FAD5E /* Social.framework */,
 				AF8C6EB31A98C5BB005FAD5E /* libsqlite3.dylib */,
 				C9E11E3E835750BA4750A52C /* libPods.a */,
@@ -358,10 +364,16 @@
 				TargetAttributes = {
 					3544DB681A992986001E3422 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = V46ME5Z7UQ;
+						DevelopmentTeam = 9DB69GE468;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					372524651A975FF200D92306 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9DB69GE468;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -527,26 +539,42 @@
 /* Begin XCBuildConfiguration section */
 		3544DB771A992986001E3422 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE8190FD16241880579B14A9 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "App Review Times/App Review Times.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "App Review Times/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		3544DB781A992986001E3422 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A38C4FA0F7783F52C60BBA2F /* Pods.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "App Review Times/App Review Times.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "App Review Times/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -663,6 +691,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Guilherme Mogames (UD8U6SK568)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -674,6 +703,7 @@
 				INFOPLIST_FILE = AppReviewTimesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "58148557-f5f8-4e8c-ad13-139d910a9ad0";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppReviewTimes.app/AppReviewTimes";
 			};
 			name = Debug;
@@ -682,6 +712,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Guilherme Mogames (UD8U6SK568)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -689,6 +720,7 @@
 				INFOPLIST_FILE = AppReviewTimesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "58148557-f5f8-4e8c-ad13-139d910a9ad0";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppReviewTimes.app/AppReviewTimes";
 			};
 			name = Release;
@@ -703,6 +735,7 @@
 				3544DB781A992986001E3422 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		372524611A975FF200D92306 /* Build configuration list for PBXProject "AppReviewTimes" */ = {
 			isa = XCConfigurationList;
