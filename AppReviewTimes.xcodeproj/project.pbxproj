@@ -30,6 +30,7 @@
 		AF8C6EBB1A993E27005FAD5E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8C6EBA1A993E27005FAD5E /* AboutViewController.m */; };
 		AF8C6EBF1A993F6E005FAD5E /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = AF8C6EBE1A993F6E005FAD5E /* about.html */; };
 		AF8C6EC11A99AA85005FAD5E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8C6EC01A99AA85005FAD5E /* QuartzCore.framework */; };
+		AF8C6EC41A99B6B5005FAD5E /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8C6EC31A99B6B5005FAD5E /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		AF8C6EBA1A993E27005FAD5E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		AF8C6EBE1A993F6E005FAD5E /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		AF8C6EC01A99AA85005FAD5E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AF8C6EC31A99B6B5005FAD5E /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		C9E11E3E835750BA4750A52C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8190FD16241880579B14A9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF8C6EC11A99AA85005FAD5E /* QuartzCore.framework in Frameworks */,
+				AF8C6EC41A99B6B5005FAD5E /* Crashlytics.framework in Frameworks */,
 				AF8C6EB61A98ED6F005FAD5E /* Social.framework in Frameworks */,
 				AF8C6EB41A98C5BB005FAD5E /* libsqlite3.dylib in Frameworks */,
 				1EA59E7FA7F6C057EC195627 /* libPods.a in Frameworks */,
@@ -256,6 +259,7 @@
 		96D8DB8F3E3842949AF0DC18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF8C6EC31A99B6B5005FAD5E /* Crashlytics.framework */,
 				AF8C6EC01A99AA85005FAD5E /* QuartzCore.framework */,
 				3544DB7E1A997104001E3422 /* libPods.a */,
 				AF8C6EB51A98ED6F005FAD5E /* Social.framework */,
@@ -325,6 +329,7 @@
 				372524641A975FF200D92306 /* Resources */,
 				C8ACE193B06EF2482B372716 /* Copy Pods Resources */,
 				3544DB7A1A992986001E3422 /* Embed App Extensions */,
+				AF8C6EC21A99B693005FAD5E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -452,6 +457,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		AF8C6EC21A99B693005FAD5E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run d3ed57c3de5c35d0d313b4da1f33fc435edcae2e 16343bfcfb68d1aa6f2f95c5afe61206ccd8a3f21499c4a97c3c8ed7d877fe44";
 		};
 		C8ACE193B06EF2482B372716 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -659,8 +677,12 @@
 				CODE_SIGN_ENTITLEMENTS = AppReviewTimes/AppReviewTimes.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AppReviewTimes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -676,8 +698,12 @@
 				CODE_SIGN_ENTITLEMENTS = AppReviewTimes/AppReviewTimes.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AppReviewTimes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

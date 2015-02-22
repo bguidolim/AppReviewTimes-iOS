@@ -8,7 +8,7 @@
 
 #import "LastCollectionViewCell.h"
 #import <Social/Social.h>
-#import <AFNetworking.h>
+//#import <AFNetworking.h>
 
 @implementation LastCollectionViewCell
 

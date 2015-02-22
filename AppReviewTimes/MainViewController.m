@@ -26,7 +26,11 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadData:) name:UIApplicationDidBecomeActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadDataNoLocalStore) name:UIApplicationDidBecomeActiveNotification object:nil];
+}
+
+- (void)reloadDataNoLocalStore {
+    [self reloadData:NO];
 }
 
 - (void)reloadData:(BOOL)localStore {

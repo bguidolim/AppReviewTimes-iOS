@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
-#import <AFNetworkActivityLogger.h>
+//#import <AFNetworkActivityLogger.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
 
@@ -21,13 +22,15 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     #ifdef DEBUG
-    [[AFNetworkActivityLogger sharedLogger] startLogging];
-    [[AFNetworkActivityLogger sharedLogger] setLevel:AFLoggerLevelDebug];
+    //[[AFNetworkActivityLogger sharedLogger] startLogging];
+    //[[AFNetworkActivityLogger sharedLogger] setLevel:AFLoggerLevelDebug];
     #endif
     
     [Parse enableLocalDatastore];
     [Parse setApplicationId:@"pYVHYPd6vO4f3cVY7qv5xgu3z1Ov9sKa5CJ0W2QR" clientKey:@"dEYW7a8feCoXE09r6cmjYrKpNBq2YrfXdsY0Drw8"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    [Crashlytics startWithAPIKey:@"d3ed57c3de5c35d0d313b4da1f33fc435edcae2e"];
     
     return YES;
 }
