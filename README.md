@@ -1,7 +1,7 @@
 # AppReviewTimes-iOS
 An app to check the average review times for iOS and Mac apps.
 
-[Available on App Store](https://itunes.apple.com/app/app-review-times-average-app/id969873038?mt=8)
+[Available on App Store](https://itunes.apple.com/app/app-review-times-average-app/id969873038?mt=8) [Waiting for review]
 
 #Run
  - ```git clone https://github.com/bguidolim/AppReviewTimes-iOS.git AppReviewTimes-iOS```
